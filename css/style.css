@@ -242,3 +242,11 @@ header {
     /* Debug */
     min-height: 600px;
 }
+
+/* FOOTER */
+
+footer{
+    background-color: #333333;
+    /* Debug */
+    min-height: 400px;
+}
