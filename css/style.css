@@ -217,3 +217,21 @@ header {
     border: 1px solid black;
     min-height: 200px;
 }
+
+@media screen and (min-width: 768px) {
+    #about-us .container {
+        width: 65%;
+    }
+
+    #about-us .row {
+        justify-content: space-between;
+    }
+
+    #about-us .txt {
+        width: 65%;
+    }
+
+    #about-us .img-txt {
+        width: 30%;
+    }
+}
