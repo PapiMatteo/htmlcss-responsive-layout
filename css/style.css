@@ -77,7 +77,7 @@ header {
     border: 1px solid black;
 }
 
-.col {
+#info-section .col {
     background-color: #b5ddff;
     width: 100%;
     margin-bottom: 1rem;
@@ -103,15 +103,15 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-    .row {
+    #info-section .row {
         justify-content: space-between;
     }
 
-    .col.big {
+    #info-section .col.big {
         width: 65%;
     }
 
-    .col {
+    #info-section .col {
         width: 30%;
     }
 }
@@ -120,4 +120,28 @@ header {
     .container {
         width: 70%;
     }
+}
+
+/* Tips Section */
+
+#tips-section {
+    background-color: #9792e4;
+    /* Debug */
+    min-height: 600px;
+}
+
+#tips-section .row {
+    padding: 3rem 0;
+}
+
+.col {
+    width: 100%;
+}
+
+.white-bg {
+    border-radius: 1rem;
+    background-color: white;
+    width: 100%;
+    /* Debug */
+    min-height: 300px;
 }
