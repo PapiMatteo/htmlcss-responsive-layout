@@ -16,7 +16,7 @@ a {
 /* COMMON */
 
 .container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -36,14 +36,31 @@ header {
 }
 
 .head-nav {
-    list-style-type: none;
-    text-decoration: none;
-    gap: 1rem;
     display: none;
 }
 
+.nav-list {
+    list-style-type: none;
+    text-decoration: none;
+    gap: 1rem;
+}
+
 .header-section {
-    height: 80px;
+    height: 90px;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        width: 80%;
+    }
+
+    .head-menu .menu-icon {
+        display: none;
+    }
+
+    .head-menu .head-nav {
+        display: inline-block;
+    }
 }
