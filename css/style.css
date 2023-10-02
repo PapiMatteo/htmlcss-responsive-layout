@@ -7,3 +7,43 @@
 body {
     font-family: 'PT Sans', sans-serif;
 }
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/* COMMON */
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+
+header {
+    height: 90px;
+    background-color: #0084fd;
+}
+
+.head-menu > * {
+    color: white;
+}
+
+.head-nav {
+    list-style-type: none;
+    text-decoration: none;
+    gap: 1rem;
+    display: none;
+}
+
+.header-section {
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
