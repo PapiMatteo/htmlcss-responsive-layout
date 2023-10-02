@@ -64,3 +64,40 @@ header {
         display: inline-block;
     }
 }
+
+/* MAIN */
+/* Info Section */
+
+.row {
+    width: 100%;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    /* Debug */
+    min-height: 800px;
+    border: 1px solid black;
+}
+
+.col {
+    background-color: #b5ddff;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    /* Debug */
+    min-height: 200px;
+}
+
+.big {
+    /* Debug */
+    min-height: 400px;
+}
+
+.content {
+    flex-wrap: wrap;
+}
+
+.content-text,.content-img {
+    width: 100%;
+    /* Debug */
+    min-height: 150px;
+    border: 1px solid black;
+}
