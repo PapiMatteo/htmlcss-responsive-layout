@@ -235,3 +235,10 @@ header {
         width: 30%;
     }
 }
+
+/* CTA Section */
+
+#cta-section {
+    /* Debug */
+    min-height: 600px;
+}
