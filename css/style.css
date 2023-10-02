@@ -24,6 +24,10 @@ a {
     display: flex;
 }
 
+.colored-bg {
+    background-color: #9792e4;
+}
+
 /* HEADER */
 
 header {
@@ -125,7 +129,6 @@ header {
 /* Tips Section */
 
 #tips-section {
-    background-color: #9792e4;
     /* Debug */
     min-height: 600px;
 }
@@ -156,4 +159,23 @@ header {
     #tips-section .container {
         width: 50%;
     }
+}
+
+/* Testimonials Section */
+
+.card {
+    flex-wrap: wrap;
+}
+
+#testimonials .col {
+    background-color: #9792e4;
+    margin-bottom: 2rem;
+    border-radius: 2.5rem;
+}
+
+.card-img , .card-text {
+    width: 100%;
+    /* Debug */
+    border: 1px solid black;
+    min-height: 150px;
 }
