@@ -179,3 +179,26 @@ header {
     border: 1px solid black;
     min-height: 150px;
 }
+
+/* Work with us Section */
+
+#with-us .row {
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+#with-us .col {
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    #with-us .col {
+        width: calc(100% / 2 - 1rem);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #with-us .col {
+        width: calc(100% / 3 - 4rem / 3);
+    }
+}
