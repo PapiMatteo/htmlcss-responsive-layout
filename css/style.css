@@ -202,3 +202,18 @@ header {
         width: calc(100% / 3 - 4rem / 3);
     }
 }
+
+/* About Us Section */
+
+.txt {
+    margin-bottom: 2rem;
+    /* Debug */
+    border: 1px solid black;
+    min-height: 400px;
+}
+
+.img-txt {
+    /* Debug */
+    border: 1px solid black;
+    min-height: 200px;
+}
