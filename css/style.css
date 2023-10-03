@@ -51,7 +51,6 @@ header {
     left: 0;
     width: 100%;
     z-index: 999;
-
 }
 
 .head-menu > * {
@@ -410,6 +409,38 @@ header {
 }
 
 /* About Us Section */
+
+.with-us-title {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem 0;
+}
+
+.number {
+    font-size: 2.5rem;
+    padding: 2.5rem 0 2rem 1.5rem;
+}
+
+.inner-title {
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.white-bg-text {
+    padding: 2rem 1.5rem;
+    color: #7d7d7d;
+}
+
+.more-btn {
+    padding: .5rem 3rem;
+}
+
+.more {
+    padding-left: 1.5rem;
+    color: white;
+    padding-bottom: 2.5rem;
+}
 
 .txt {
     margin-bottom: 2rem;
