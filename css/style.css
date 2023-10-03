@@ -569,3 +569,33 @@ footer{
     /* Debug */
     min-height: 400px;
 }
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-text {
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-links {
+    color: white;
+}
+
+.footer-links a {
+    color: #9792e4;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    footer .container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    footer .container {
+        width: 30%;
+    }
+}
