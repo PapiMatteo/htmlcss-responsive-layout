@@ -442,17 +442,50 @@ header {
 
 /* About Us Section */
 
-.txt {
-    margin-bottom: 2rem;
-    /* Debug */
-    border: 1px solid black;
-    min-height: 400px;
+.about-us-title {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
 }
 
-.img-txt {
-    /* Debug */
-    border: 1px solid black;
-    min-height: 200px;
+.about-text {
+    margin-bottom: 3rem;
+}
+
+.txt {
+    margin-bottom: 2rem;
+}
+
+.about-img-content {
+    position: relative;
+    text-align: center;
+}
+
+.about-img-content i {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.about-img-content img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text-content {
+    padding-top: 2rem;
+}    
+
+.linkedin {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.linkedin-btn {
+    color: white;
+    padding: .5rem;
 }
 
 @media screen and (min-width: 768px) {
