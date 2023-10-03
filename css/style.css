@@ -32,6 +32,11 @@ img {
     background-color: #9792e4;
 }
 
+.btn {
+    display: inline-block;
+    border-radius: 3rem;
+}
+
 /* HEADER */
 
 header {
@@ -56,6 +61,7 @@ header {
 .nav-list {
     list-style-type: none;
     text-decoration: none;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -68,6 +74,12 @@ header {
 .hamburger-btn {
     background-color: transparent;
     border: 0;
+}
+
+.cta-btn  {
+    color: black;
+    background-color: white;
+    padding: .5rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -95,10 +107,10 @@ header {
     width: 100%;
     margin-top: 4rem;
     flex-wrap: wrap;
+}
+
+#info-section .row {
     gap: 1.5rem;
-    /* Debug */
-    min-height: 800px;
-    border: 1px solid black;
 }
 
 #info-section .col {
@@ -106,13 +118,6 @@ header {
     width: 100%;
     margin-bottom: 1rem;
     border-radius: 1rem;
-    /* Debug */
-    min-height: 200px;
-}
-
-.big {
-    /* Debug */
-    min-height: 400px;
 }
 
 .content-flex {
@@ -121,9 +126,25 @@ header {
 
 .content-text,.content-img {
     width: 100%;
-    /* Debug */
-    min-height: 150px;
-    border: 1px solid black;
+}
+
+.content-img img {
+    width:100%;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.content-img {
+    align-self: center;
+}
+
+.big-info-title {
+    font-size: 1.5rem;
+    color: #0084fd;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem .5rem 0;
 }
 
 .info-title {
@@ -134,10 +155,31 @@ header {
     padding: 1.5rem .5rem 0;
 }
 
-.info-text {
+.big-info-text {
+    margin-bottom: 2rem;
     padding: 0 1.5rem;
     font-weight: bold;
     color: #5a6e7f;
+}
+
+.info-text {
+    text-align: center;
+    font-weight: bold;
+    color: #5a6e7f;
+    padding: 0 1.5rem 2rem;
+}
+
+.blue-btn {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #0084fd;
+    padding: .5rem 4rem;
+    margin-left: 1.5rem;
+}
+
+.col-icon {
+    text-align: center;
+    padding: 1.5rem .5rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -149,7 +191,11 @@ header {
         width: calc((2 * ((100% / 3) - (3rem / 3)) + 1.5rem));
     }
 
-    .info-title {
+    .content-flex .content-img img {
+        width: 50%;
+    }
+
+    .big-info-title {
         text-align: left;
         padding-left: 1.5rem;
     }
@@ -162,8 +208,20 @@ header {
         width: 70%;
     }
 
+    #info-section .content-flex {
+        align-items: center;
+    }
+
+    #info-section .content-img {
+        align-self: baseline;
+    }
+
     .content-flex .content-text, .content-flex .content-img {
         width: 50%;
+    }
+
+    .content-flex .content-img img {
+        width: 90%;
     }
 }
 
@@ -193,6 +251,10 @@ header {
 }
 
 @media screen and (min-width: 992px) {
+    #tips-section .row{
+        align-items: baseline;
+    }
+
     #tips-section .col{
         width: 50%;
     }
