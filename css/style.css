@@ -13,6 +13,10 @@ a {
     color: inherit;
 }
 
+img {
+    width: 100%;
+}
+
 /* COMMON */
 
 .container {
@@ -33,6 +37,12 @@ a {
 header {
     height: 90px;
     background-color: #0084fd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
 }
 
 .head-menu > * {
@@ -55,12 +65,17 @@ header {
     align-items: center;
 }
 
+.hamburger-btn {
+    background-color: transparent;
+    border: 0;
+}
+
 @media screen and (min-width: 992px) {
     .container{
         width: 70%;
     }
 
-    .head-menu .menu-icon {
+    .head-menu .hamburger-btn {
         display: none;
     }
 
@@ -72,10 +87,15 @@ header {
 /* MAIN */
 /* Info Section */
 
+#info-section {
+    margin-top: 150px;
+}
+
 .row {
     width: 100%;
     margin-top: 4rem;
     flex-wrap: wrap;
+    gap: 1.5rem;
     /* Debug */
     min-height: 800px;
     border: 1px solid black;
@@ -95,7 +115,7 @@ header {
     min-height: 400px;
 }
 
-.content {
+.content-flex {
     flex-wrap: wrap;
 }
 
@@ -106,23 +126,44 @@ header {
     border: 1px solid black;
 }
 
+.info-title {
+    font-size: 1.5rem;
+    color: #0084fd;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem .5rem 0;
+}
+
+.info-text {
+    padding: 0 1.5rem;
+    font-weight: bold;
+    color: #5a6e7f;
+}
+
 @media screen and (min-width: 768px) {
-    #info-section .row {
-        justify-content: space-between;
+    #info-section .col {
+        width: calc((100% / 3) - (3rem / 3));
     }
 
     #info-section .col.big {
-        width: 65%;
+        width: calc((2 * ((100% / 3) - (3rem / 3)) + 1.5rem));
     }
 
-    #info-section .col {
-        width: 30%;
+    .info-title {
+        text-align: left;
+        padding-left: 1.5rem;
     }
+
+    
 }
 
 @media screen and (min-width: 992px) {
     .container {
         width: 70%;
+    }
+
+    .content-flex .content-text, .content-flex .content-img {
+        width: 50%;
     }
 }
 
