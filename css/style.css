@@ -396,20 +396,6 @@ header {
     margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-    #with-us .col {
-        width: calc(100% / 2 - 1rem);
-    }
-}
-
-@media screen and (min-width: 992px) {
-    #with-us .col {
-        width: calc(100% / 3 - 4rem / 3);
-    }
-}
-
-/* About Us Section */
-
 .with-us-title {
     color: white;
     text-align: center;
@@ -441,6 +427,20 @@ header {
     color: white;
     padding-bottom: 2.5rem;
 }
+
+@media screen and (min-width: 768px) {
+    #with-us .col {
+        width: calc(100% / 2 - 1rem);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #with-us .col {
+        width: calc(100% / 3 - 4rem / 3);
+    }
+}
+
+/* About Us Section */
 
 .txt {
     margin-bottom: 2rem;
