@@ -37,6 +37,10 @@ img {
     border-radius: 3rem;
 }
 
+.purple-title {
+    color: #9792e4;
+}
+
 /* HEADER */
 
 header {
@@ -272,7 +276,10 @@ header {
 
 .purple-btn {
     display: inline-block;  
-    background-color: #9792e4;
+    background-color: #9792e4; 
+}
+
+.circle {
     padding-top: 15px;
     height: 60px;
     width: 60px;
@@ -310,6 +317,23 @@ header {
 
 /* Testimonials Section */
 
+.section-head {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.testimonials-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials-head-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 .card {
     flex-wrap: wrap;
 }
@@ -322,9 +346,44 @@ header {
 
 .card-img , .card-text {
     width: 100%;
-    /* Debug */
-    border: 1px solid black;
-    min-height: 150px;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.card-img img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials-text {
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.5rem .5rem;
+}
+
+.name {
+    color: white;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-img {
+        width: 30%;
+        padding-bottom: 2rem;
+    }
+
+    .card-text {
+        width: 65%;
+        text-align: left;
+    }
 }
 
 /* Work with us Section */
