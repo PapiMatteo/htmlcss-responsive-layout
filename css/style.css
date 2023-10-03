@@ -227,10 +227,7 @@ header {
 
 /* Tips Section */
 
-#tips-section {
-    /* Debug */
-    min-height: 600px;
-}
+
 
 #tips-section .row {
     padding: 3rem 0;
@@ -238,30 +235,77 @@ header {
 
 .col {
     width: 100%;
-    /* Debug */
-    min-height: 300px;
 }
 
 .white-bg {
-    border-radius: 1rem;
+    border-radius: 2.5rem;
     background-color: white;
     width: 100%;
-    /* Debug */
-    min-height: 300px;
+}
+
+.tips-title {
+    padding-top: 4rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.tips-text {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.black-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.black-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.arrow-btn {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.purple-btn {
+    display: inline-block;  
+    background-color: #9792e4;
+    padding-top: 15px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 992px) {
     #tips-section .row{
         align-items: baseline;
+        justify-content: space-between;
     }
 
     #tips-section .col{
+        width: 45%;
+    }
+
+    .content-img {
+        text-align: center;
+    }
+
+    .white-bg-content .content-img img {
         width: 50%;
+        display: inline-block;
     }
 
     #tips-section .container {
-        width: 50%;
+        width: 45%;
     }
+
+    .tips-text {
+        margin-bottom: 0;
+    }
+
 }
 
 /* Testimonials Section */
